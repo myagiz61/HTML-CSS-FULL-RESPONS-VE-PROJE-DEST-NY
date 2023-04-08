@@ -6,4 +6,4 @@
 
 <h3>Çalışır Hali</h3>
 
-![](destiniy.gif)
+![](destin.gif)
