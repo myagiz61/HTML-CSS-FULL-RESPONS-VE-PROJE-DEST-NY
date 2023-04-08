@@ -1,0 +1,593 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  text-transform: capitalize;
+}
+body {
+  background-color: var(--black);
+}
+
+/*!Değişkenler*/
+:root {
+  --green: #16ff00;
+  --white: #f5f5f5;
+  --gray: #cdcccc;
+  --black: #121212;
+}
+/*!Genel stil işlemleri*/
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--white);
+}
+
+button {
+  border: none;
+  border-radius: 16px;
+  padding: 10px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+p {
+  color: var(--gray);
+}
+
+/*!Sayfa düzenleme Başlangıcı*/
+
+header {
+  z-index: 1;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  /* z-index: 1000; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+.link {
+  color: var(--green);
+}
+
+.nav-btn {
+  display: none;
+}
+
+/* !heroalani */
+.hero {
+  margin-top: 60px;
+  height: 50vh;
+  background: url(/images/back.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero .heros {
+  border-radius: 20px;
+  /* camefekti */
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* camefektison */
+  gap: 40px;
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.hero .heros h1 {
+  color: var(--green);
+}
+.hero .hero-btn button {
+  width: 120px;
+}
+
+.hero .hero-btn button:nth-child(1) {
+  background-color: var(--green);
+}
+
+/* !Hero sec alanı*/
+.container-sec {
+  display: grid;
+  gap: 30px;
+}
+
+.hero-sec {
+  display: flex;
+  align-items: center;
+}
+
+.hero-sec h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.hero-sec p {
+  margin-left: 50px;
+  margin-top: 80px;
+  width: 500px;
+  font-size: 20px;
+}
+
+.hero-sec button {
+  margin-left: 50px;
+  width: 500px;
+  border-radius: 4px;
+  margin-top: 80px;
+  height: 60px;
+}
+
+.images-sec {
+  margin-top: 50px;
+  margin-left: 700px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+
+.hero-sec .images-sec .window {
+  background: url(/images/sec2.jpg);
+  width: 200px;
+  height: 400px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+/*! Arge alanı */
+
+.arge-sec .arge-info {
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.arge-sec .arge-info h1 {
+  margin-bottom: 20px;
+}
+
+.arge-sec .cards video {
+  width: 150px;
+}
+.arge-sec .card {
+  margin-top: 50px;
+  justify-content: space-around;
+  display: flex;
+}
+.arge-sec .cards {
+  width: 410px;
+  height: 270px;
+  border: 2px solid rgba(146, 139, 139, 0.412);
+  border-radius: 8px;
+}
+.arge-sec .cards h3 {
+  margin-left: 12px;
+}
+.arge-sec .cards p {
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+/* !listealani */
+.liste-sec {
+  margin: 50px 0;
+}
+.liste-sec .listener {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.liste-sec .listener p {
+  width: 320px;
+  margin-left: 650px;
+}
+.liste-sec ul {
+  margin-left: 50px;
+  width: 1430px;
+}
+.liste-sec ul li {
+  padding-bottom: 40px;
+  margin-top: 40px;
+  list-style: none;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.liste-sec ul li img {
+  width: 60px;
+}
+
+.liste-sec li h1 span {
+  color: gray;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+/* !PROJECT SAYFASI BAŞLANGICI */
+.project {
+  margin-left: 50px;
+  margin-top: 90px;
+}
+
+.project h1 {
+  /* hazır gradient */
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 1300px;
+  font-size: 50px;
+}
+
+/* !Neler yapıyoruz alanı */
+
+.what-do {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+.what-do .do {
+  margin-left: -25px;
+  margin-top: 90px;
+}
+
+.what-do .do h1 {
+  margin-bottom: 30px;
+}
+.what-do .do p {
+  width: 400px;
+}
+
+.what-do .box {
+  margin-left: 110px;
+  margin-top: 90px;
+  display: flex;
+  gap: 50px;
+}
+.what-do .box .box-card {
+  background-color: #323443;
+  border-radius: 10px;
+  padding: 30px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  min-width: 200px;
+  max-width: 400px;
+  position: relative;
+}
+
+.what-do .box .box-card p {
+  margin-top: 20px;
+}
+
+.what-do .box .box-card img {
+  margin-top: -15px;
+  width: 50px;
+}
+
+/* ! project2 alanaı */
+
+.project2 {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.project2 h1 {
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.project2 .type-card {
+  display: flex;
+  gap: 30px;
+}
+
+.type-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
+}
+
+.project2 .icon {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  background-color: #494a57;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.type-card {
+  margin: 20px;
+}
+
+.img:hover {
+  /* hazır gradient */
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+}
+.type-card .img {
+  background-color: #323443;
+  padding: 30px 40px 0;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+
+/* ! TEAMS ALANİ BAŞLANGI */
+
+.teams {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teams-bar h2 {
+  margin-left: 50px;
+}
+
+.team-box {
+  margin-top: 35px;
+  margin-left: 50px;
+  width: 390px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.team-box h4 {
+  margin-top: 10px;
+  margin-left: 24px;
+}
+.teams-boxing {
+  padding: 10px;
+  padding-bottom: 24px;
+  display: flex;
+}
+.box-4 {
+  background-color: #121212;
+  padding: 10px;
+  margin: 10px;
+  width: 55px;
+  border-radius: 10px;
+}
+.box-4 p {
+  text-align: center;
+
+  font-size: 18px;
+}
+.teams-img img {
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 60px;
+  margin-top: 50px;
+}
+
+.team-buton button {
+  margin: 5px;
+  margin-top: 10px;
+  color: var(--white);
+  width: 150px;
+  background-color: var(--black);
+  border: 0.1px solid var(--green);
+}
+.team-buton button:nth-child(1) {
+  margin-left: 50px;
+}
+
+.team-buton button:hover {
+  background-color: var(--green);
+}
+
+/* ! resim alanı */
+
+.img-sec {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-around;
+}
+.img-sec .img-ful img {
+  border-radius: 10px;
+  width: 300px;
+}
+
+.img-sec .img-ful h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-left: 10px;
+  height: 38px;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 0px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/*! Başış Alanı */
+#donate-sec {
+  margin-top: 150px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.donate-sec-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.donate-sec-content {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  gap: 40px;
+}
+
+.donate-sec-people {
+  display: flex;
+  gap: 10px;
+  background-color: rgb(106, 0, 106);
+  color: white;
+  padding: 10px;
+  border-radius: 60px;
+}
+
+.donate-sec-people img {
+  width: 50px;
+  border-radius: 50%;
+}
+.donate-sec-info button {
+  width: 180px;
+  border-radius: 7px;
+}
+
+/*! footeralanli */
+
+footer {
+  padding: 40px;
+  background-color: var(--black);
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid var(--gray);
+  padding-top: 20px;
+}
+
+.footer-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.field {
+  display: flex;
+  gap: 10px;
+}
+.field input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  max-height: 50px;
+}
+.field button {
+  background-color: var(--green);
+  white-space: nowrap;
+}
+
+.btn-aln {
+  display: flex;
+}
+.btn-aln input {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.btn-aln button {
+  width: 84px;
+  white-space: nowrap;
+  background-color: var(--green);
+}
+.heros p {
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+/*! Responsive alanı */
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .nav-btn {
+    display: block;
+  }
+  .toggle {
+    z-index: 1000;
+    position: fixed;
+    background-color: #323443;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 76px;
+    border-radius: 10px;
+  }
+  .footers {
+    place-items: center;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    padding: 20px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .window {
+    display: none;
+  }
+}
